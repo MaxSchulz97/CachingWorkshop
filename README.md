@@ -8,10 +8,10 @@
 
 
 ## Stap 2 - Installeer de correcte packages
-Open de "Package Manager Console"
+Open de "Package Manager Console" en voer de volgende commands uit om de packages te installeren.
 
 ### Packages
-1. StackExchange.reddis
+StackExchange.reddis
 ```
 Install-Package StackExchange.Redis
 ```

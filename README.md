@@ -6,7 +6,9 @@
 
 # Opzetten van onze applicatie
 ## Stap 1 - Maak een nieuw project aan
-
+1. Open Visual Studio 2019 en maak een nieuw MVC ASP.Net Core project aan.
+2. Geef je project een mooie naam (Wij gebruiken “CachingMetReddis”) en klik op create.
+3. Niks aanpassen gewoon nog een keer op create klikken.
 
 ## Stap 2 - Installeer de correcte packages
 Open de "Package Manager Console" en voer de volgende commands uit om de benodigde packages te installeren.
@@ -64,14 +66,15 @@ Zet de zip in een handige directory en pak de zip uit
 Run reddis-server.exe. Je server is nu opgestart.
 
 # Reddis gebruiken in de code
-## 
-``` Het opslaan van een value in de Reddis Cache
+## Het opslaan van een value in de Reddis Cache
+``` 
 ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("localhost");
 IDatabase db = redis.GetDatabase();
 db.StringSet("<INSERT_OWN_KEY>", <INSERT_VALUE_TO_STORE>);
 ```
 
-``` Het ophalen van een value uit de Reddis Cache
+## Het ophalen van een value uit de Reddis Cache
+```
 string value = db.StringGet("INSERT_OWN_KEY");
 ```
 

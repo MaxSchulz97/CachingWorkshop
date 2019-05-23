@@ -102,6 +102,29 @@ Verwijder in je DbContext file de volgende functie volledig.
 OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 ``` 
 
+# Implementeren van Redis
+## Stap 1 - Maak een folder "Services" aan
+Maak in je solution een folder "Services". Maak binnen deze folder een class genaamd "CacheService.cs".
+
+## Stap 2 - Edit de CacheService.cs
+Plak de volgende code in de class
+```
+private static ConnectionMultiplexer connectionMultiplexer = ConnectionMultiplexer.Connect(<INSERT_REDIS_ACCES_KEY>);
+private static IDatabase database = connectionMultiplexer.GetDatabase();
+
+public static IDatabase GetInstance()
+{
+   return database;
+}
+```
+
+## Stap 3 - Navigeer naar je Acces-Key
+In Azure navigeer naar de volgende pagina "All Services" --> "Acces Keys" --> "Primary connection string (StackExchange.Redis)", kopieer deze key.
+
+![Copy the correct key](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/.jpeg)
+
+## Stap 4 - 
+
 # Bronnen
 - https://stackexchange.github.io/StackExchange.Redis/
 - https://github.com/microsoftarchive/redis/releases

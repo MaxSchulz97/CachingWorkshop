@@ -45,6 +45,18 @@ Haal een bakie koffie en wacht een klein kwartiertje!
 # Opzetten van onze Database
 Bij het gebruik maken van de database zijn er twee mogelijkheden. Je kan je eigen AirBnB database gebruiken of je kan een nieuwe database gebruiken. Voor deze demo hebben wij een .bak bestand gemaakt met een tabel, deze is te vinden in het mapje Database.
 
+## Stap 1 - Open Microsoft SQL Server Management Studio
+Open je Microsoft SQL Server Management Studio
+
+## Stap 2 - Restore database
+Klik met je rechter muisknop op de folder "Databases" en selecteer "Restore Database...".
+
+## Stap 3 - Selecteer .bak bestand
+Importeer net als bij de AirBnB database (gedaan aan het begin van deze course) ook het .bak bestand uit deze repo.
+
+## Stap 4 - Klik op OK
+Na het selecteren van het correcte bestand klik op "OK". Er is nu als het goed is een database aangemaakt.
+
 # Opzetten van onze applicatie
 ## Stap 1 - Maak een nieuw project aan
 1. Open Visual Studio 2019 en maak een nieuw MVC ASP.Net Core project aan.
@@ -64,7 +76,7 @@ Install-Package Microsoft.EntityFrameworkCore.SqlServer.Design
 Install-Package StackExchange.Redis
 ```
 
-Scaffolding
+### Scaffolding
 ```
 Scaffold-DbContext "Server=<INSERT_SERVER_NAME>;Database=<INSERT_DB_NAME>;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 ```
@@ -95,8 +107,6 @@ OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 //Constructor which allows configuration to be passed into the context by DI         
 public AIRBNBContext(DbContextOptions<AIRBNBContext> options) : base(options) { } 
 ```
-
-
 
 # Bronnen
 - https://stackexchange.github.io/StackExchange.Redis/

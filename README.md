@@ -97,16 +97,10 @@ services.AddDbContext<<INSERT_DB_CONTEXT>>(options => options.UseSqlServer(Confi
 ```
 
 ## Stap 5 - Verwijder de functie OnConfiguring()
-Verwijder in je DbContext file 
+Verwijder in je DbContext file de volgende funtie volledig.
 ```
 OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 ``` 
-
-## Stap 6 - Voeg een contructor toe
-```
-//Constructor which allows configuration to be passed into the context by DI         
-public AIRBNBContext(DbContextOptions<AIRBNBContext> options) : base(options) { } 
-```
 
 # Bronnen
 - https://stackexchange.github.io/StackExchange.Redis/

@@ -2,7 +2,38 @@
 ## Benodigdheden
 1. .NET Core Versie 3.0 Preview 5
 2. Microsoft Visual Studio 2019 Preview
-3. [Redis server](https://github.com/microsoftarchive/redis/releases)
+3. Activeer azure acount
+
+# Opzetten van Azure/Reddis
+Wij gebruiken hier niet onze HAN-account om dat die al geactiveerd was. Als je HAN-account is verlopen, kan je deze stappen volgen met je persoonlijke email om een nieuw account te maken. Hier heb je dan wel minder te goed.
+## Stap 1 - Ga naar Azure en klik op activate
+([Ga naar Azure for Students](https://azure.microsoft.com/en-us/free/students/))
+<Afbeelding 1>
+
+## Stap 2 - Log in met je persoonlijke email
+<Afbeelding 2>
+
+## Stap 3 - Dashboard page
+<Afbeelding 3>
+
+## Stap 4 - "Create a resource"
+<Afbeelding 4>
+
+## Stap 5 - Ga naar tab databases
+<Afbeelding 5>
+
+## Stap 6 - Azure Cache for Redis
+<Afbeelding 6>
+
+## Stap 7 - Maak nieuwe Radis Cache
+<Afbeelding 7>
+#### LET OP! Reddis kost krediet. Ga zorgvuldig om met welke selectie je maakt. (Het goedkoopste pakket zou genoeg moeten zijn)
+
+## Stap 8 - Wacht circa. 15 minuten
+<Afbeelding 8>
+
+## Known issues
+- Als het in Chrome niet werkt (400 - Bad request pagina), gebruik dan FireFox.
 
 # Opzetten van onze applicatie
 ## Stap 1 - Maak een nieuw project aan
@@ -55,29 +86,9 @@ OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 public AIRBNBContext(DbContextOptions<AIRBNBContext> options) : base(options) { } 
 ```
 
-# Opzetten van Reddis
-## Stap 1 - Downloaden van de Reddis server
-Zorg dat je de Reddis server als zip hebt gedownload van de volgende link [Redis server](https://github.com/microsoftarchive/redis/releases)
 
-## Stap 2 - Uitpakken van de zip
-Zet de zip in een handige directory en pak de zip uit
-
-## Stap 3 - Openen van Reddis
-Run reddis-server.exe. Je server is nu opgestart.
-
-# Reddis gebruiken in de code
-## Het opslaan van een value in de Reddis Cache
-``` 
-ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("localhost");
-IDatabase db = redis.GetDatabase();
-db.StringSet("<INSERT_OWN_KEY>", <INSERT_VALUE_TO_STORE>);
-```
-
-## Het ophalen van een value uit de Reddis Cache
-```
-string value = db.StringGet("INSERT_OWN_KEY");
-```
 
 # Bronnen
 - https://stackexchange.github.io/StackExchange.Redis/
 - https://github.com/microsoftarchive/redis/releases
+-  (["Azure Cache for Redis" opstart tutorial](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-web-app-howto))

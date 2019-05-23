@@ -1,5 +1,5 @@
 # CachingWorkshop
-Mocht er onverwachts iets niet lukken tijdens het volgen van de workshop, dan kan het uitegewerkte project worden gedownload van de volgende link ([GitHub Repository Download link](https://github.com/MaxSchulz97/CachingWorkshop.git)).
+Mocht er onverwachts iets niet lukken tijdens het volgen van de workshop, dan kan het uitegewerkte project worden gedownload van de volgende link https://github.com/MaxSchulz97/CachingWorkshop.git.
 
 ## Benodigdheden
 1. .NET Core Versie 3.0 Preview 5

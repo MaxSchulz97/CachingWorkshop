@@ -5,14 +5,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using CachingMetReddis.Models;
+using CachingMetRedis.Models;
 
 namespace CachingMetReddis.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly AirBNBRedisContext _airBNBRedisContext;
+
+        public HomeController(AirBNBRedisContext airBNBRedisContext)
+        {
+            _airBNBRedisContext = airBNBRedisContext;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            return Ok(_airBNBRedisContext.SummaryListings);
         }
 
         public IActionResult Privacy()

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28902.138
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CachingMetReddis", "CachingMetReddis\CachingMetReddis.csproj", "{58F77133-326D-4667-8135-9CF96F82148F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CachingMetRedis", "CachingMetReddis\CachingMetRedis.csproj", "{58F77133-326D-4667-8135-9CF96F82148F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

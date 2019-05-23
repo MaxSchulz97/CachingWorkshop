@@ -6328,9 +6328,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MaxSchulz\\Dropbox\\han\\NotS\\WAPP\\Workshops\\WorkshopCaching\\CachingMetReddis\\CachingMetReddis\\CachingMetReddis.csproj",
-      "projectName": "CachingMetReddis",
-      "projectPath": "C:\\Users\\MaxSchulz\\Dropbox\\han\\NotS\\WAPP\\Workshops\\WorkshopCaching\\CachingMetReddis\\CachingMetReddis\\CachingMetReddis.csproj",
+      "projectUniqueName": "C:\\Users\\MaxSchulz\\Dropbox\\han\\NotS\\WAPP\\Workshops\\WorkshopCaching\\CachingMetReddis\\CachingMetReddis\\CachingMetRedis.csproj",
+      "projectName": "CachingMetRedis",
+      "projectPath": "C:\\Users\\MaxSchulz\\Dropbox\\han\\NotS\\WAPP\\Workshops\\WorkshopCaching\\CachingMetReddis\\CachingMetReddis\\CachingMetRedis.csproj",
       "packagesPath": "C:\\Users\\MaxSchulz\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\MaxSchulz\\Dropbox\\han\\NotS\\WAPP\\Workshops\\WorkshopCaching\\CachingMetReddis\\CachingMetReddis\\obj\\",
       "projectStyle": "PackageReference",

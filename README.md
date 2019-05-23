@@ -14,17 +14,24 @@ Wij gebruiken hier niet onze HAN-account om dat die al geactiveerd was. Als je H
 ![Login to your Azure](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/2LoginToAzureAccount.jpeg)
 
 ## Stap 3 - Dashboard page
+Klik op deze pagina linksbovenin op "Create A Resource"
+
 ![Dashboard page](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/3AzureDashboard.jpeg)
 
-## Stap 4 - "Create a resource"
+## Stap 4 - "Creating a resource"
+Klik op "Databases" en vervolgens op "Azure Cache for Redis"
+
 ![Activate Azure](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/4CreateAzureCache.jpeg)
 
 ## Stap 5 - Maak nieuwe Radis Cache
+Vul de verschillende gegevens in voor het maken van de Cache
+
 ![Activate Azure](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/5CreateTheCache.jpeg)
 
 #### LET OP! Reddis kost krediet. Ga zorgvuldig om met welke selectie je maakt. (Het goedkoopste pakket zou genoeg moeten zijn)
 
 ## Stap 6 - Wacht circa. 15 minuten
+Haal een bakie koffie en wacht een klein kwartiertje!
 ![Wait a while](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/6WaitAWhile.jpeg)
 
 ## Known issues

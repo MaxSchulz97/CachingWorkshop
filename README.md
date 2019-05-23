@@ -42,6 +42,9 @@ Haal een bakie koffie en wacht een klein kwartiertje!
 ## Known issues
 - Als het in Chrome niet werkt (400 - Bad request pagina), gebruik dan FireFox.
 
+# Opzetten van onze Database
+Bij het gebruik maken van de database zijn er twee mogelijkheden. Je kan je eigen AirBnB database gebruiken of je kan een nieuwe database gebruiken. Voor deze demo hebben wij een .bak bestand gemaakt met een tabel, deze is te vinden in het mapje Database.
+
 # Opzetten van onze applicatie
 ## Stap 1 - Maak een nieuw project aan
 1. Open Visual Studio 2019 en maak een nieuw MVC ASP.Net Core project aan.

@@ -27,6 +27,7 @@ Wij gebruiken hier niet onze HAN-account om dat die al geactiveerd was. Als je H
 
 ## Stap 7 - Maak nieuwe Radis Cache
 <Afbeelding 7>
+
 #### LET OP! Reddis kost krediet. Ga zorgvuldig om met welke selectie je maakt. (Het goedkoopste pakket zou genoeg moeten zijn)
 
 ## Stap 8 - Wacht circa. 15 minuten

@@ -72,6 +72,7 @@ Command om alle packages te installeren
 Install-Package Microsoft.EntityFrameworkCore.SqlServer
 Install-Package Microsoft.EntityFrameworkCore.Tools
 Install-Package Microsoft.EntityFrameworkCore.SqlServer.Design
+Install-Package Newtonsoft.Json
 
 Install-Package StackExchange.Redis
 ```
@@ -121,9 +122,34 @@ public static IDatabase GetInstance()
 ## Stap 3 - Navigeer naar je Acces-Key
 In Azure navigeer naar de volgende pagina "All Services" --> "Acces Keys" --> "Primary connection string (StackExchange.Redis)", kopieer deze key.
 
-![Copy the correct key](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/.jpeg)
+![Copy the correct key](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/b21671e8-ebf8-4489-8aea-4cd790ab5074.jpeg)
 
-## Stap 4 - 
+## Stap 4 - Plak de key op de correcte plek in je code
+Plak de gekopieerde Key in de bij de stap 2 gemaakte code, op de plek van <INSERT_REDIS_ACCES_KEY>.
+
+## Stap 5 - Navigeer naar de HomeController.cs
+Plak de volgende code in "public IActionResult Index()"
+```
+IEnumerable<SummaryListings> summaryListings = null;
+
+if (CacheService.GetInstance().KeyExists("SummaryListings"))
+{
+     summaryListings = JsonConvert.DeserializeObject<IEnumerable<SummaryListings>>(CacheService.GetInstance().StringGet("SummaryListings"));
+}
+else
+{
+     // Add to cache
+     summaryListings = _airBNBRedisContext.SummaryListings.ToList();
+     CacheService.GetInstance().StringSet("SummaryListings", JsonConvert.SerializeObject(summaryListings), TimeSpan.FromDays(1));
+}
+
+return Ok(summaryListings);
+```
+
+## Stap 6 - Run het project
+Als nu het project wordt opgestart zal de eerste keer de data uit je lokale database gehaald worden. Hierbij wordt in het bovenstaande codevoorbeeld dus de "else" gepakt. Hierdoor wordt de data in je Azure Cache opgeslagen. De volgende keer als de pagina wordt geladen zal in bovenstaande de code dus het "if block" worden gebruikt.
+
+Gefeliciteerd je hebt nu een werkende cache met Azure!
 
 # Bronnen
 - https://stackexchange.github.io/StackExchange.Redis/

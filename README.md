@@ -8,30 +8,24 @@
 Wij gebruiken hier niet onze HAN-account om dat die al geactiveerd was. Als je HAN-account is verlopen, kan je deze stappen volgen met je persoonlijke email om een nieuw account te maken. Hier heb je dan wel minder te goed.
 ## Stap 1 - Ga naar Azure en klik op activate
 ([Ga naar Azure for Students](https://azure.microsoft.com/en-us/free/students/))
-<Afbeelding 1>
+![Activate Azure](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/1ActivateAzureAccount.jpeg)
 
 ## Stap 2 - Log in met je persoonlijke email
-<Afbeelding 2>
+![Login to your Azure](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/2LoginToAzureAccount.jpeg)
 
 ## Stap 3 - Dashboard page
-<Afbeelding 3>
+![Dashboard page](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/3AzureDashboard.jpeg)
 
 ## Stap 4 - "Create a resource"
-<Afbeelding 4>
+![Activate Azure](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/4CreateAzureCache.jpeg)
 
-## Stap 5 - Ga naar tab databases
-<Afbeelding 5>
-
-## Stap 6 - Azure Cache for Redis
-<Afbeelding 6>
-
-## Stap 7 - Maak nieuwe Radis Cache
-<Afbeelding 7>
+## Stap 5 - Maak nieuwe Radis Cache
+![Activate Azure](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/5CreateTheCache.jpeg)
 
 #### LET OP! Reddis kost krediet. Ga zorgvuldig om met welke selectie je maakt. (Het goedkoopste pakket zou genoeg moeten zijn)
 
-## Stap 8 - Wacht circa. 15 minuten
-<Afbeelding 8>
+## Stap 6 - Wacht circa. 15 minuten
+![Wait a while](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/6WaitAWhile.jpeg)
 
 ## Known issues
 - Als het in Chrome niet werkt (400 - Bad request pagina), gebruik dan FireFox.

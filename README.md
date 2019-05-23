@@ -122,7 +122,7 @@ public static IDatabase GetInstance()
 ## Stap 3 - Navigeer naar je Acces-Key
 In Azure navigeer naar de volgende pagina "All Services" --> "Acces Keys" --> "Primary connection string (StackExchange.Redis)", kopieer deze key.
 
-![Copy the correct key](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/b21671e8-ebf8-4489-8aea-4cd790ab5074.jpeg)
+![Copy the correct key](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/b21671e8-ebf8-4489-8aea-4cd790ab5074.jpg)
 
 ## Stap 4 - Plak de key op de correcte plek in je code
 Plak de gekopieerde Key in de bij de stap 2 gemaakte code, op de plek van <INSERT_REDIS_ACCES_KEY>.

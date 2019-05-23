@@ -97,7 +97,7 @@ services.AddDbContext<<INSERT_DB_CONTEXT>>(options => options.UseSqlServer(Confi
 ```
 
 ## Stap 5 - Verwijder de functie OnConfiguring()
-Verwijder in je DbContext file de volgende funtie volledig.
+Verwijder in je DbContext file de volgende functie volledig.
 ```
 OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 ``` 

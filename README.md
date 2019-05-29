@@ -13,6 +13,7 @@ Wij gebruiken hier niet onze HAN-account om dat die al geactiveerd was. Als je H
 Mocht je na het klikken op de groene knop "Activate Now" een pagina met de tekst "400 - Bad request" krijgen, kijk dan onder het kopje "Known Issues" in deze README
 
 [Ga naar Azure for Students (link van Marcel)](https://azure.microsoft.com/nl-nl/free/)
+
 [Ga naar Azure for Students](https://azure.microsoft.com/en-us/free/students/)
 ![Activate Azure](https://github.com/MaxSchulz97/CachingWorkshop/blob/master/Screenshots/1ActivateAzureAccount.jpeg)
 

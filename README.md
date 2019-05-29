@@ -138,15 +138,6 @@ public HomeController(AirBNBRedisContext airBNBRedisContext)
 {
       _airBNBRedisContext = airBNBRedisContext;
 }
-```
-Plak vervolgens de volgende code in "public IActionResult Index()"
-```
-private readonly AirBNBRedisContext _airBNBRedisContext;
-
-public HomeController(AirBNBRedisContext airBNBRedisContext)
-{
-      _airBNBRedisContext = airBNBRedisContext;
-}
 
 IEnumerable<SummaryListings> summaryListings = null;
 

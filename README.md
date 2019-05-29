@@ -130,8 +130,24 @@ In Azure navigeer naar de volgende pagina "All Services" --> "Acces Keys" --> "P
 Plak de gekopieerde Key in de bij de stap 2 gemaakte code, op de plek van <INSERT_REDIS_ACCES_KEY>.
 
 ## Stap 5 - Navigeer naar de HomeController.cs
-Plak de volgende code in "public IActionResult Index()"
+Plak de volgende code boven "public IActionResult Index()"
 ```
+private readonly AirBNBRedisContext _airBNBRedisContext;
+
+public HomeController(AirBNBRedisContext airBNBRedisContext)
+{
+      _airBNBRedisContext = airBNBRedisContext;
+}
+```
+Plak vervolgens de volgende code in "public IActionResult Index()"
+```
+private readonly AirBNBRedisContext _airBNBRedisContext;
+
+public HomeController(AirBNBRedisContext airBNBRedisContext)
+{
+      _airBNBRedisContext = airBNBRedisContext;
+}
+
 IEnumerable<SummaryListings> summaryListings = null;
 
 if (CacheService.GetInstance().KeyExists("SummaryListings"))

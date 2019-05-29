@@ -61,7 +61,7 @@ Na het selecteren van het correcte bestand klik op "OK". Er is nu als het goed i
 ## Stap 1 - Maak een nieuw project aan
 1. Open Visual Studio 2019 en maak een nieuw MVC ASP.Net Core project aan.
 2. Geef je project een mooie naam (Wij gebruiken “CachingMetReddis”) en klik op create.
-3. Niks aanpassen gewoon nog een keer op create klikken.
+3. Zorg dat je Model-View-Controller hebt geselecteerd en klik op create.
 
 ## Stap 2 - Installeer de correcte packages
 Open de "Package Manager Console" en voer de volgende commands uit om de benodigde packages te installeren.

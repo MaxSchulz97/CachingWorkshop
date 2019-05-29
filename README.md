@@ -43,7 +43,7 @@ Haal een bakie koffie en wacht een klein kwartiertje!
 - Als het in Chrome niet werkt (400 - Bad request pagina), gebruik dan FireFox.
 
 # Opzetten van onze Database
-Bij het gebruik maken van de database zijn er twee mogelijkheden. Je kan je eigen AirBnB database gebruiken of je kan een nieuwe database gebruiken. Voor deze demo hebben wij een .bak bestand gemaakt met een tabel, deze is te vinden in het mapje Database.
+Bij het gebruik maken van de database zijn er twee mogelijkheden. Je kan je eigen AirBnB database gebruiken of je kan een nieuwe database gebruiken. Voor deze demo hebben wij een .bak bestand gemaakt met een tabel, deze is te vinden in het mapje Database. Plaats dit bac bestandje op je C schijf zodat hij makkelijk terug te vinden is.
 
 ## Stap 1 - Open Microsoft SQL Server Management Studio
 Open je Microsoft SQL Server Management Studio

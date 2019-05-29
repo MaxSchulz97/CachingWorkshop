@@ -155,3 +155,4 @@ Gefeliciteerd je hebt nu een werkende cache met Azure!
 - https://stackexchange.github.io/StackExchange.Redis/
 - https://github.com/microsoftarchive/redis/releases
 -  (["Azure Cache for Redis" opstart tutorial](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-web-app-howto))
+-  ([Reddis playground](try.redis.io))
